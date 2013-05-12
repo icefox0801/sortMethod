@@ -1,8 +1,8 @@
 package com.sort.demo;
 
 import com.sort.common.SortSuperClass;
-import com.sort.method.QuickSort;
-import com.sort.publicinterface.SortingInterface;
+import com.sort.sortable.Sortable;
+import com.sort.sortable.method.QuickSort;
 import com.sort.sortingtype.SortingType;
 import com.sort.utils.RandomArray;
 
@@ -24,7 +24,7 @@ public class demo {
 		final int[] A = ra.generate(1000000);
 		SortingType st = new SortingType(); // change the argument to define a
 											// different sorting method
-		SortingInterface sm = new QuickSort(A);
+		Sortable sm = new QuickSort(A);
 		st.setSortMethod(sm);
 		st.sort();
 		/*

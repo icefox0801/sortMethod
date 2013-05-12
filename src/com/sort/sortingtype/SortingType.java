@@ -1,6 +1,6 @@
 package com.sort.sortingtype;
 
-import com.sort.publicinterface.SortingInterface;
+import com.sort.sortable.Sortable;
 
 /**
  * this class provide method to the type of sorting
@@ -10,13 +10,13 @@ import com.sort.publicinterface.SortingInterface;
  */
 
 public class SortingType {
-	private SortingInterface sortMethod;
+	private Sortable sortMethod;
 
 	/**
 	 * @return the type of sorting
 	 */
 
-	public SortingInterface getSortMethod() {
+	public Sortable getSortMethod() {
 		return sortMethod;
 	}
 
@@ -25,7 +25,7 @@ public class SortingType {
 	 * 
 	 * @param sortMethod
 	 */
-	public void setSortMethod(SortingInterface sortMethod) {
+	public void setSortMethod(Sortable sortMethod) {
 		this.sortMethod = sortMethod;
 	}
 

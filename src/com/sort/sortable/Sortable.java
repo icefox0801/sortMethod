@@ -1,4 +1,4 @@
-package com.sort.publicinterface;
+package com.sort.sortable;
 
 /**
  * the public data interface for those sorting method
@@ -6,7 +6,7 @@ package com.sort.publicinterface;
  * @author ZhJF
  * @version 1.0
  */
-public interface SortingInterface {
+public interface Sortable {
 
 	public int[] sort(int n);
 
